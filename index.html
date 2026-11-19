@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <title>Bloco</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233245C4'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='700' font-size='13' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/estilo.css?v=7">
+</head>
+<body>
+  <div id="telaSetup" class="setup" hidden></div>
+
+  <div id="telaApp" class="app" hidden>
+    <aside class="side">
+      <div class="brand"><div class="brand-mark">B</div><div><b>Bloco</b><small>Área interna</small></div></div>
+      <nav class="nav" id="nav"></nav>
+      <div class="side-foot">
+        <span class="label" style="color:var(--side-fg)">Pessoas</span>
+        <div class="who" id="who"></div>
+        <div class="sync" id="sync"><i></i><span>Conectando…</span></div>
+        <a id="linkHistorico" href="#" target="_blank" rel="noopener">Histórico de alterações</a>
+        <button type="button" data-act="sair">Sair deste computador</button>
+      </div>
+    </aside>
+    <main class="main" id="main"></main>
+  </div>
+
+  <dialog id="dlg"><form id="dlgForm" method="dialog"></form></dialog>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="js/config.js?v=7"></script>
+  <script src="js/util.js?v=7"></script>
+  <script src="js/github.js?v=7"></script>
+  <script src="js/store.js?v=7"></script>
+  <script src="js/views.js?v=7"></script>
+  <script src="js/forms.js?v=7"></script>
+  <script src="js/setup.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
+</body>
+</html>

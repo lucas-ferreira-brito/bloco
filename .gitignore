@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.log
+# Nunca suba dados reais ou tokens neste repositório
+dados/
+.env
